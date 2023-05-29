@@ -1,0 +1,110 @@
+.intro__sec {
+  background-color: var(--white);
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+
+.intro__sec .update__profile {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--primary);
+  cursor: pointer;
+  color: var(--txtWhite);
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+.intro__sec .left__side {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__sec .left__side h2 {
+  font-weight: bold;
+}
+
+.intro__sec .right__side {
+  flex: 75%;
+}
+
+.intro__sec .profile__img {
+  width: 200px;
+  height: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.intro__sec .profile__img img {
+  position: relative;
+}
+
+.intro__sec table {
+  width: 300px;
+  text-align: justify;
+}
+
+.intro__sec table tr td#percentage {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.intro__sec .upload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.intro__sec .upload input[type="submit"] {
+  background-color: var(--primary);
+  padding: 10px;
+  color: var(--txtWhite);
+}
+
+.intro__sec .upload input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.intro__sec .img__update {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  top: 2%;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.intro__sec .img__update button {
+  background: none;
+}
+
+.intro__sec .img__update svg {
+  color: var(--primary);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.intro__sec input[type="file"] {
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}

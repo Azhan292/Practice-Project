@@ -1,0 +1,52 @@
+.transations__list {
+  padding: 50px;
+  width: calc(100% - 100px);
+  background-color: var(--white);
+  border-radius: 5px;
+  margin-top: 50px;
+  color: var(--txtBlack);
+}
+
+.transations__list .table {
+  overflow-x: auto;
+}
+
+.transations__list table {
+  width: 100%;
+  text-align: center;
+  border-collapse: inherit;
+  border-spacing: 0 25px;
+}
+
+.transations__list table thead tr {
+  background-color: var(--primary);
+  color: var(--txtWhite);
+}
+
+.transations__list table td,
+.transations__list table th {
+  padding: 15px 5px;
+}
+
+.transations__list table tbody tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+.transations__list table tbody tr:nth-child(even) {
+  background-color: var(--lightGrey);
+}
+
+.transations__list table tbody tr button.status__btn {
+  background-color: var(--primary);
+  padding: 5px;
+  color: var(--txtWhite);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 660px) {
+  .transations__list {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+}

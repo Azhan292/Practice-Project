@@ -1,0 +1,42 @@
+.freelancer__details__reviews {
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.freelancer__details__reviews #line {
+  margin: 20px 0;
+}
+
+.freelancer__details__reviews .flex {
+  display: flex;
+}
+
+.freelancer__details__reviews .profile__img {
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 20px;
+}
+
+.freelancer__details__reviews .profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.freelancer__details__reviews .flex h2 {
+  margin-right: 20px;
+}
+
+.freelancer__details__reviews svg {
+  color: var(--lightOrange);
+}
+
+@media screen and (max-width: 490px) {
+  .freelancer__details__reviews {
+    padding: 25px;
+  }
+}

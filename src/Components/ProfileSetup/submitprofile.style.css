@@ -1,0 +1,114 @@
+.submit__profile__sec {
+  width: 100%;
+}
+
+.submit__profile__sec .upper__box,
+.submit__profile__sec .lower__box {
+  position: relative;
+  width: calc(100% - 200px);
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  padding: 50px 100px;
+  margin-bottom: 20px;
+}
+
+#edit__btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.submit__profile__sec .upper__box #upper__box__flex {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.submit__profile__sec .upper__box #upper__box__flex .intro {
+  margin-left: 20px;
+}
+
+.submit__profile__sec h1 {
+  color: var(--primary);
+}
+
+.submit__profile__sec .upper__box #upper__box__flex .photo {
+  height: 200px;
+  width: 200px;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit__profile__sec .upper__box #upper__box__flex .photo svg {
+  height: 90%;
+  width: 90%;
+  color: var(--white);
+}
+
+.submit__profile__sec .upper__box #upper__box__flex .photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.submit__profile__sec .file__name {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+.submit__profile__sec .submit__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.submit__profile__sec .submit__btn button {
+  background-color: var(--white);
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+  .submit__profile__sec .upper__box #upper__box__flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .submit__profile__sec .upper__box,
+  .submit__profile__sec .lower__box {
+    width: calc(100% - 100px);
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .submit__profile__sec .upper__box,
+  .submit__profile__sec .lower__box {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  .submit__profile__sec .upper__box #upper__box__flex .photo {
+    height: 150px;
+    width: 150px;
+  }
+  .submit__profile__sec .submit__btn button {
+    font-size: 16px;
+  }
+}

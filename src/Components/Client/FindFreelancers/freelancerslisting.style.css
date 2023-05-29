@@ -1,0 +1,167 @@
+.freelancer__listings__sec,
+.loading {
+  flex: 100%;
+  background-color: var(--white);
+  position: relative;
+  min-height: 100vh;
+  border-radius: 10px;
+}
+
+button.refresh {
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  padding: 20px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.freelancer__listings__sec #input {
+  width: 70%;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.freelancer__listings__sec .freelancers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.freelancer__listings__sec #freelancer {
+  border-radius: 10px;
+  width: 250px;
+  padding: 25px;
+  flex: 33.33%;
+  margin: auto;
+  text-align: justify;
+  margin: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.freelancer__listings__sec #flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.freelancer__listings__sec #intro {
+  display: flex;
+  align-items: center;
+}
+
+.freelancer__listings__sec #intro #profile__img {
+  width: 150px;
+  height: 100px;
+  box-shadow: rgba(8, 8, 10, 0.2) 0px 7px 29px 0px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.freelancer__listings__sec #intro #profile__img img,
+.freelancer__listings__sec #intro #profile__img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.freelancer__listings__sec #intro h2 {
+  margin: 0;
+}
+
+.freelancer__listings__sec #intro h1,
+.freelancer__listings__sec #intro span {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.freelancer__listings__sec #intro h1 a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.freelancer__listings__sec #intro h1 a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.freelancer__listings__sec .sm__filter {
+  color: var(--primary);
+  text-decoration: underline;
+  margin: 5px 0;
+  cursor: pointer;
+  display: none;
+  text-align: right;
+}
+
+.load__more__btn {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.load__more__btn button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 10px 0;
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .freelancer__listings__sec .sm__filter {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .freelancer__listings__sec #freelancer {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  button.refresh {
+    padding: 10px;
+  }
+  button.refresh svg {
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .freelancer__listings__sec #intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .freelancer__listings__sec #intro #profile__img {
+    margin-bottom: 20px;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .freelancer__listings__sec #flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

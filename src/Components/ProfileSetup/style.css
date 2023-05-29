@@ -1,0 +1,212 @@
+.dashboard__sec {
+  flex: calc(80% - 200px);
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  height: 100%;
+  border-radius: 5px;
+  padding: 50px 100px;
+}
+
+.dashboard__sec h1,
+.dashboard__sec h2 {
+  text-align: center;
+  color: var(--primary);
+}
+
+.dashboard__sec #btn__group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__sec #btn__group .normal__btn {
+  width: 200px;
+}
+
+.dashboard__sec .empty__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.dashboard__sec .empty__btn button {
+  width: 200px;
+}
+
+/* overview next btn */
+
+.dashboard__sec #next__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard__sec #next__btn button {
+  width: 200px;
+}
+
+/* Resume upload section */
+
+.upload__sec {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px solid var(--primary);
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.upload-btn-wrapper button {
+  background: none;
+}
+
+.upload-btn-wrapper h3 {
+  color: var(--primary);
+}
+
+.upload-btn-wrapper svg {
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/* rate section */
+
+.dashboard__sec #input__flex {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.dashboard__sec #input__flex #text__flex {
+  margin-right: 50px;
+  text-align: left;
+  width: 50%;
+}
+
+.dashboard__sec #input__flex h2,
+.dashboard__sec #input__flex h3 {
+  text-align: left;
+}
+
+.dashboard__sec .fee,
+.dashboard__sec .recieve__amount {
+  background-color: var(--white);
+  width: calc(50% - 40px);
+  padding: 0 20px;
+  margin: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(226, 192, 192, 0.06) 0px 2px 4px -1px;
+}
+
+.dashboard__sec .fee h2,
+.dashboard__sec .recieve__amount h2 {
+  color: var(--txtBlack);
+}
+
+/* profile photo */
+
+.dashboard__sec .photo__sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard__sec #photo {
+  background-color: var(--primary);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.dashboard__sec #photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dashboard__sec #photo svg {
+  color: var(--white);
+  font-size: 190px;
+}
+
+#img__upload {
+  border: 5px solid var(--primary);
+  border-radius: 25px;
+  padding: 10px;
+  position: relative;
+}
+
+#img__upload #txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#success {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+@media screen and (max-width: 1450px) {
+  .dashboard__sec {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .dashboard__sec {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .dashboard__sec #btn__group {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .dashboard__sec #input__flex {
+    flex-direction: column;
+  }
+  .dashboard__sec #input__flex #text__flex {
+    margin-right: 0;
+    width: 100%;
+  }
+  .dashboard__sec .recieve__amount,
+  .dashboard__sec .fee {
+    margin-right: 0;
+    width: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .resume__sec #btn__group .normal__btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.message__area {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.msg__box {
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+}

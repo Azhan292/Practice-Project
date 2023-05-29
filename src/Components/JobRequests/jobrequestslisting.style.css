@@ -1,0 +1,100 @@
+.job__requests__listing {
+  background-color: var(--white);
+  margin: 50px 0;
+  padding: 50px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.job__requests__listing .no__job__requestFound {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+.job__requests__listing p {
+  background-color: var(--primary-light2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.job__request__inner__data {
+  display: flex;
+  align-items: center;
+}
+
+.job__request__inner__data .heading strong {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.job__request__inner__data .heading strong svg {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.job__request__inner__data h2 {
+  background-color: var(--primary-light2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.job__request {
+  padding: 25px;
+  position: relative;
+}
+
+.job__request h1 strong {
+  display: flex;
+  align-items: center;
+}
+
+.job__request h1 strong svg {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.job__requests__listing .paid {
+  background-color: green;
+  color: var(--white);
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.job__request .btn__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.job__status__accepted,
+.job__status__rejected {
+  margin: 0 10px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--txtWhite);
+  text-align: center;
+  cursor: pointer;
+}
+
+.job__status__accepted {
+  background-color: green;
+}
+
+.job__status__rejected {
+  background-color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .job__requests__listing {
+    padding: 25px;
+  }
+}

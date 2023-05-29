@@ -1,0 +1,73 @@
+.jobdetails__rating__sec {
+  margin: 50px 0;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.jobdetails__rating__sec #rating__sec__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+.jobdetails__rating__sec #profile__img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 20px;
+  min-width: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.jobdetails__rating__sec #profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jobdetails__rating__sec #rating__sec__flex .review__sec {
+  width: 70%;
+  display: flex;
+}
+
+.jobdetails__rating__sec #rating__sec__flex .rating__sec {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobdetails__rating__sec #rating__sec__flex #rating {
+  display: flex;
+  align-items: center;
+}
+
+.jobdetails__rating__sec #rating__sec__flex #rating svg {
+  color: var(--lightOrange);
+}
+
+@media screen and (max-width: 880px) {
+  .jobdetails__rating__sec #rating__sec__flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .jobdetails__rating__sec #rating__sec__flex .review__sec,
+  .jobdetails__rating__sec #rating__sec__flex .rating__sec {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .jobdetails__rating__sec #rating__sec__flex {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .jobdetails__rating__sec #rating__sec__flex {
+    padding: 10px;
+  }
+}

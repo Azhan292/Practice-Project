@@ -1,0 +1,71 @@
+.withdraw__method {
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.withdraw__method .flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.withdraw__method .table__1 {
+  overflow-x: auto;
+  flex: 70%;
+  margin: 0 10px;
+}
+
+.withdraw__method .table__2 {
+  overflow-x: auto;
+  flex: 30%;
+  margin: 0 10px;
+}
+
+.withdraw__method table {
+  width: 100%;
+  text-align: center;
+  border-collapse: inherit;
+  border-spacing: 0 25px;
+  text-transform: capitalize;
+}
+
+.withdraw__method table#second__table {
+  border-collapse: inherit;
+  border-spacing: 0;
+  margin-top: 25px;
+}
+
+.withdraw__method table thead tr {
+  background-color: var(--primary);
+  color: var(--txtWhite);
+}
+
+.withdraw__method table td,
+.withdraw__method table th {
+  padding: 15px 5px;
+}
+
+.withdraw__method table#second__table td,
+.withdraw__method table#second__table th {
+  padding: 5px;
+}
+
+.withdraw__method table tbody tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+.withdraw__method table tbody tr:nth-child(even) {
+  background-color: var(--lightGrey);
+}
+
+.withdraw__method .link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 660px) {
+  .withdraw__method .flex {
+    flex-direction: column-reverse;
+  }
+}

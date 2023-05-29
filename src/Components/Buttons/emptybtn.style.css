@@ -1,0 +1,24 @@
+.empty__btn button {
+  width: 100%;
+  border-radius: 25px;
+  border: 5px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .empty__btn button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .empty__btn button {
+    font-size: 14px;
+  }
+}

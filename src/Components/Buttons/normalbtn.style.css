@@ -1,0 +1,23 @@
+.normal__btn button {
+  width: 100%;
+  border-radius: 25px;
+  background: var(--primary);
+  color: var(--txtWhite);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .normal__btn button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .normal__btn button {
+    font-size: 14px;
+  }
+}

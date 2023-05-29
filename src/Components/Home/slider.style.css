@@ -1,0 +1,83 @@
+.home__slider__area {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+
+#home__slider__box {
+  padding: 20px 10px;
+  margin: 0 20px;
+  width: calc(100% - 60px) !important;
+  border: 1px solid var(--lightGrey);
+  border-radius: 10px;
+}
+
+#home__slider__box .view__profile__btn {
+  background-color: var(--primary);
+  padding: 10px 15px;
+  width: 100px;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#home__slider__box .view__profile__btn a {
+  color: var(--txtWhite);
+  text-decoration: none;
+}
+
+#home__slider__box .view__profile__btn a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 430px) {
+  #home__slider__box {
+    padding: 10px;
+  }
+}
+
+.freelancer__intro__sec {
+  display: flex;
+}
+
+.freelancer__intro__sec h1 {
+  margin: 0;
+}
+
+.freelancer__intro__sec .profile__img__sec {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.freelancer__intro__sec .profile__img__sec #img {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border-radius: 50px;
+}
+
+.freelancer__intro__sec .profile__img__sec #img img,
+.freelancer__intro__sec .profile__img__sec #img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.freelancer__intro__sec .name__sec {
+  margin-left: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+@media screen and (max-width: 470px) {
+  .freelancer__intro__sec .name__sec {
+    width: 100%;
+  }
+}

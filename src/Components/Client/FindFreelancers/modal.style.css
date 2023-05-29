@@ -1,0 +1,75 @@
+.modal {
+  background: white;
+  min-height: calc(100vh - 100px);
+  width: calc(100% - 400px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  display: none;
+  z-index: 10000000;
+  padding: 50px 200px;
+}
+
+.modal.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close__btn {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal .form__group {
+  width: 100%;
+}
+
+.modal .checks {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .flex {
+  display: flex;
+}
+
+.modal .btn {
+  padding: 10px 50px;
+  background: var(--white);
+  color: var(--primary);
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.modal .btn.clear {
+  color: var(--primary);
+}
+
+.modal .btn.apply {
+  background: var(--primary);
+  color: var(--txtWhite);
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    min-height: calc(100vh - 100px);
+    width: calc(100% - 100px);
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .modal {
+    min-height: calc(100vh - 40px);
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+}

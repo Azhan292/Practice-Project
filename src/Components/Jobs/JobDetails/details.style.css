@@ -1,0 +1,86 @@
+.jobdetails__sec {
+  margin: 50px 0;
+  width: calc(100% - 100px);
+  padding: 50px;
+  background-color: var(--white);
+}
+
+#job__details__flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#job__details__flex svg {
+  font-size: 24px;
+}
+
+#job__details__flex #rating,
+#job__details__flex #address h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#job__details__flex #rating svg {
+  color: var(--lightOrange);
+}
+
+#job__details__flex #mail {
+  color: var(--primary);
+}
+
+#job__details__flex div {
+  margin-right: 50px;
+}
+
+.jobdetails__sec #line {
+  /* width: calc(100% + 100px); */
+  background-color: var(--primary);
+  /* margin-left: -50px; */
+}
+
+.jobdetails__sec .input__flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.jobdetails__sec .submit__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobdetails__sec .submit__btn button {
+  margin-top: 20px;
+  padding: 15px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  cursor: pointer;
+  transition: all 0.5 ease;
+  border-radius: 25px;
+}
+
+.jobdetails__sec .submit__btn button:hover {
+  opacity: 0.9;
+}
+
+.jobdetails__sec .attached__file {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .jobdetails__sec {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+}

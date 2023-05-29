@@ -1,0 +1,69 @@
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+}
+
+#tag {
+  background: var(--primary-light);
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating #stars {
+  margin-right: 20px;
+}
+
+.rating #stars svg {
+  margin: 0 5px;
+  color: var(--lightOrange);
+}
+
+.freelancer__intro__sec {
+  display: flex;
+}
+
+.freelancer__intro__sec h1 {
+  margin: 0;
+}
+
+.freelancer__intro__sec .profile__img__sec {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.freelancer__intro__sec .profile__img__sec #img {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border-radius: 50px;
+}
+
+.freelancer__intro__sec .profile__img__sec #img img,
+.freelancer__intro__sec .profile__img__sec #img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.freelancer__intro__sec .name__sec {
+  margin-left: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+@media screen and (max-width: 470px) {
+  .freelancer__intro__sec .name__sec {
+    width: 100%;
+  }
+}

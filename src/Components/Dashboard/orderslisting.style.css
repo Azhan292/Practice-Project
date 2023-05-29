@@ -1,0 +1,123 @@
+.order__listings {
+  background-color: var(--white);
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.order__listings #line {
+  margin: 20px 0;
+}
+
+.order__listings .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order__listings .profile__img {
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 20px;
+}
+
+.order__listings .profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order__listings .flex__1 {
+  display: flex;
+  align-items: center;
+}
+
+.order__listings .card {
+  background-color: red;
+  color: var(--white);
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.order__listings .upload__order {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__listings .upload__order label {
+  display: inline-block;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.order__listings button.deliver__btn {
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 960px) {
+  .order__listings .flex {
+    flex-direction: column;
+  }
+  .order__listings .flex h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .order__listings .flex .flex__1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 340) {
+  .order__listings .profile__img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.milestone__main__div {
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.milestone__main__div .milestone__project__name {
+  padding: 0 50px;
+  padding-top: 20px;
+}
+
+.order__listings .rating__btn,
+.milestone__main__div .rating__btn {
+  background-color: var(--primary);
+  width: 100px;
+  color: var(--txtWhite);
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+.transactions__page .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.transactions__page .duration h2 {
+  color: var(--txtBlack);
+  background-color: var(--white);
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+
+.transactions__page .download__invoice_btn button {
+  background-color: transparent;
+  border: 5px solid var(--white);
+  color: var(--txtWhite);
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 660px) {
+  .transactions__page .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .transactions__page .duration h2,
+  .transactions__page .download__invoice_btn button {
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,16 @@
+.freelancer__contact {
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.freelancer__contact label {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 490px) {
+  .freelancer__contact {
+    padding: 25px;
+  }
+}

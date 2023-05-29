@@ -1,0 +1,42 @@
+.btn__section {
+  display: flex;
+  justify-content: center;
+}
+
+.btns {
+  border-radius: 50px;
+  background: var(--white);
+}
+
+.btns button {
+  padding: 10px 50px;
+  background: var(--white);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  color: var(--txtBlack);
+}
+
+.btns button.active__proposals {
+  border-radius: 25px;
+}
+
+.btns button.archieved__proposals {
+  border-radius: 25px;
+}
+
+.btns button.active {
+  background: var(--primary);
+  color: var(--txtWhite);
+}
+
+@media screen and (max-width: 380px) {
+  .btns button {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .btns button {
+    padding: 10px 15px;
+  }
+}

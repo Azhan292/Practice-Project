@@ -1,0 +1,63 @@
+.filter__sec {
+  flex: 20%;
+  color: var(--primary);
+  padding-right: 30px;
+}
+
+.filter__sec #filter__cat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#filter__cat svg {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.filter__sec #filter__input {
+  position: relative;
+  display: none;
+}
+
+#filter__input.show {
+  display: block;
+}
+
+.filter__sec #filter__input svg {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: grey;
+}
+
+.filter__sec input[type="text"] {
+  width: calc(100% - 50px);
+  padding: 10px 25px;
+  background-color: var(--white);
+  margin-bottom: 10px;
+}
+
+.filter__sec input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+#hourly__input__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#hourly__input__flex input[type="number"] {
+  width: 50px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .filter__sec {
+    display: none;
+  }
+}

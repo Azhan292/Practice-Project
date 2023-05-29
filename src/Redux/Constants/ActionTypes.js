@@ -1,0 +1,18 @@
+// users
+export const USER_REQUEST = 'USER_REQUEST';
+export const USER_SUCCESS = 'USER_SUCCESS';
+export const USER_FAILURE = 'USER_FAILURE';
+export const REMOVE_USER = 'REMOVE_USER';
+export const USER_TYPE = 'USER_TYPE';
+export const SET_USER_TYPE = 'SET_USER_TYPE';
+export const REMOVE_USER_TYPE = 'REMOVE_USER_TYPE';
+
+// freelancers
+export const SET_FREELANCERS = 'SET_FREELANCERS';
+export const SELECTED_FREELANCERS = 'SELECTED_FREELANCERS';
+export const REMOVE_SELECTED_FREELANCER = 'REMOVE_SELECTED_FREELANCER';
+
+// jobs
+export const SET_JOBS = 'SET_JOBS';
+export const SELECTED_JOB = 'SELECTED_JOB';
+export const REMOVE_SELECTED_JOB = 'REMOVE_SELECTED_JOB';

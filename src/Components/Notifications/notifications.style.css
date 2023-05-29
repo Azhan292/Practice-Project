@@ -1,0 +1,60 @@
+.notifications__page {
+  margin: 50px 0;
+  min-height: 100vh;
+}
+
+.notifications__page .notification__list {
+  background-color: var(--white);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.notifications__page .notification__list .notification {
+  background-color: var(--primary-light2);
+  padding: 25px;
+  border-radius: 20px;
+  width: calc(100% - 50px);
+  position: relative;
+  margin: 30px 0;
+}
+
+.notifications__page .notification__list .notification p {
+  margin-right: 100px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.notifications__page .notification__list .notification .read__mark__btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--txtWhite);
+  transition: all 0.5s ease;
+  padding: 5px 10px;
+}
+
+.notifications__page
+  .notification__list
+  .notification
+  .delete__notification__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.notifications__page
+  .notification__list
+  .notification
+  .delete__notification__btn:hover {
+  opacity: 0.7;
+}

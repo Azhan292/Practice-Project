@@ -1,0 +1,59 @@
+.right__side__bar {
+  flex: 10%;
+  color: var(--primary);
+  padding-right: 30px;
+  height: 100%;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 100px;
+  margin: 0 30px;
+}
+
+.right__side__bar .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: calc(100% + 30px);
+}
+
+.right__side__bar .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.right__side__bar table {
+  width: calc(100% + 30px);
+}
+
+.right__side__bar table tbody tr {
+  width: calc(100% + 30px);
+}
+
+.right__side__bar table tbody tr th:last-child {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.right__side__bar table tbody tr th {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.right__side__bar table tbody tr th:first-child {
+  position: relative;
+  padding: 10px;
+}
+
+.right__side__bar table tbody tr th svg {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

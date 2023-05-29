@@ -1,0 +1,23 @@
+.profile__setup {
+  padding: 50px 100px;
+  min-height: 100vh;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__setup {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .profile__setup {
+    padding: 25px 50px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .profile__setup {
+    padding: 25px;
+  }
+}

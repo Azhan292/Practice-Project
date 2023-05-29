@@ -1,0 +1,169 @@
+.intro__sec {
+  background-color: var(--white);
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+
+.intro__sec .payment__verify {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.intro__sec .payment__verify .payment__verified {
+  padding: 2px 5px;
+  background-color: green;
+  color: var(--txtWhite);
+  border-radius: 10px;
+}
+
+.intro__sec .payment__verify .payment__not__verified {
+  padding: 2px 5px;
+  background-color: red;
+  color: var(--txtWhite);
+  border-radius: 10px;
+}
+
+.intro__sec a.resume__btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  color: var(--txtWhite);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.intro__sec a.resume__btn svg {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.intro__sec a.resume__btn:hover {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+.intro__sec .left__side {
+  flex: 25%;
+}
+
+.intro__sec .left__side h2 {
+  font-weight: bold;
+}
+
+.intro__sec .left__side h2 span {
+  color: var(--txtBlack);
+  font-weight: normal;
+}
+
+.intro__sec .right__side {
+  flex: 75%;
+}
+
+.intro__sec .right__side .rating svg {
+  color: var(--lightOrange);
+  margin: 0;
+  font-size: 20px;
+}
+
+.intro__sec .right__side p {
+  background-color: #eceff1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+.intro__sec .right__side h3 {
+  margin-bottom: -10px;
+}
+
+.intro__sec .right__side table tbody tr {
+  display: flex;
+}
+
+.intro__sec .right__side table tbody tr td:first-child {
+  margin-right: 10px;
+}
+
+.intro__sec .right__side table tbody tr td strong {
+  display: flex;
+  align-items: center;
+}
+
+.intro__sec .right__side table tbody tr td svg {
+  color: var(--primary);
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.intro__sec .profile__img {
+  width: 200px;
+  height: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+}
+
+.intro__sec .profile__img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.intro__sec table {
+  width: 300px;
+  text-align: justify;
+}
+
+.intro__sec table tr td#percentage {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.intro__sec button.read__more {
+  color: var(--primary);
+  background-color: var(--primary-light);
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 940px) {
+  .intro__sec {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .intro__sec a.resume__btn {
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .intro__sec a.resume__btn {
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+  }
+}

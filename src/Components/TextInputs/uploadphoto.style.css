@@ -1,0 +1,36 @@
+.upload__photo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-photo-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 5px solid var(--primary);
+  padding: 0 30px;
+  border-radius: 50px;
+}
+
+.upload-photo-btn-wrapper button {
+  background: none;
+}
+
+.upload-photo-btn-wrapper h3 {
+  color: var(--primary);
+}
+
+.upload-photo-btn-wrapper svg {
+  font-size: 100px;
+  color: var(--primary);
+}
+
+.upload-photo-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}

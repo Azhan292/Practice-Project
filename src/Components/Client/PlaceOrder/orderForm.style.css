@@ -1,0 +1,42 @@
+.order__form {
+  background-color: var(--white);
+  margin: 50px 0;
+  padding: 50px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.order__form .submit__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order__form .order__type__btn button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.milestone__form button.add__milestone,
+.milestone__form button.remove__milestone {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .order__form {
+    padding: 25px;
+  }
+}

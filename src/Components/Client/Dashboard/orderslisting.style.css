@@ -1,0 +1,86 @@
+.order__listings {
+  background-color: var(--white);
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.order__listings #line {
+  margin: 20px 0;
+}
+
+.order__listings .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order__listings .profile__img {
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: 20px;
+}
+
+.order__listings .profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order__listings .flex__1 {
+  display: flex;
+  align-items: center;
+}
+
+.order__listings .card__late {
+  background-color: red;
+  color: var(--white);
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-right: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.order__listings .card__not__late {
+  background-color: green;
+  color: var(--white);
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-right: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.order__listings .accept__order__btn {
+  padding: 5px 10px;
+  background-color: green;
+  color: var(--txtWhite);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.order__listings .reject__order__btn {
+  padding: 5px 10px;
+  background-color: red;
+  color: var(--txtWhite);
+  cursor: pointer;
+}
+
+.order__listings .rating__btn,
+.milestone__main__div .rating__btn {
+  background-color: var(--primary);
+  width: 50px;
+  color: var(--txtWhite);
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}

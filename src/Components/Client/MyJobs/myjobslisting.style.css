@@ -1,0 +1,91 @@
+.my__job__listings__sec {
+  color: var(--txtBlack);
+  margin: 50px 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.my__job__listings__sec #my__job {
+  background-color: var(--white);
+  padding: 50px;
+  margin: 5px 0;
+  border-radius: 10px;
+  text-align: justify;
+  position: relative;
+}
+
+.my__job__listings__sec #my__job .delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  color: var(--red);
+  cursor: pointer;
+}
+
+.my__job__listings__sec #flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.my__job__listings__sec .my__jobs__count {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 50px;
+}
+
+.my__job__listings__sec .rating {
+  display: flex;
+}
+
+.my__job__listings__sec .rating svg {
+  height: 20px;
+  width: 20px;
+  color: var(--lightOrange);
+}
+
+.my__job__listings__sec #flex svg {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.my__job__listings__sec #flex h2 {
+  flex: 33.33%;
+  text-align: center;
+}
+
+.my__job__listings__sec #flex h2 strong {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.my__job__listings__sec #flex__1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.my__job__listings__sec .my__jobs__outer__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+  .my__job__listings__sec #my__job {
+    padding: 25px;
+  }
+  .my__job__listings__sec #flex {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .my__job__listings__sec #flex h2 strong {
+    margin-right: 15px;
+  }
+  .my__job__listings__sec .my__jobs__outer__flex {
+    flex-direction: row;
+  }
+}

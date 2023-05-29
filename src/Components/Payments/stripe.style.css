@@ -1,0 +1,12 @@
+button#stripe__btn {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  font-weight: bold;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+button#stripe__btn:hover {
+  opacity: 0.9;
+}

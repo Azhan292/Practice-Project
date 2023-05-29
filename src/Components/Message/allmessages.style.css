@@ -1,0 +1,70 @@
+.all__msgs {
+  flex: 25%;
+  position: relative;
+}
+
+.all__msgs span {
+  width: 10em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.all__msgs .header {
+  background-color: var(--white);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid var(--grey);
+  border-top-left-radius: 10px;
+}
+
+.all__msgs .msg__list {
+  height: calc(90vh - 90px);
+  width: calc(100% - 20px);
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.all__msgs .msg__list .msg {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.all__msgs .msg__list .msg h2,
+.all__msgs .msg__list .msg h3 {
+  margin: 0;
+  width: 10em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.all__msgs .msg__list .msg .profile__img {
+  min-width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
+
+.all__msgs .msg__list .msg .profile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.all__msgs .msg__search__field {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}

@@ -1,0 +1,436 @@
+.auth {
+  background-color: var(--primary-light);
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.auth__box {
+  width: 60%;
+  height: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.auth__box .logo {
+  width: 100px;
+  height: 70px;
+}
+
+.auth__box .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.auth__box #shape1 {
+  background-color: var(--primary-light);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  transform: rotate(45deg);
+}
+
+.auth__box #shape2 {
+  background-color: var(--primary-light);
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+  transform: rotate(45deg);
+}
+
+.auth__box #shape3 {
+  background-color: var(--primary-light);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -7%;
+  top: 50%;
+  transform: rotate(35deg);
+}
+
+.auth__box #shape4 {
+  background-color: var(--white);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  left: -35%;
+  bottom: -35%;
+}
+
+.auth__box #box__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth__box #box__right .password__field {
+  position: relative;
+}
+
+.auth__box #box__right .password__field svg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.auth__box .radio__btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth__box input[type="radio"] {
+  width: 100%;
+}
+
+.auth__box #box__left,
+.auth__box #box__right {
+  padding: 10px;
+}
+
+.auth__box #box__left {
+  flex: 40%;
+  background-color: var(--primary);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.auth__box #box__right {
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#auth__sidebar__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 40px);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#auth__sidebar__inner h6 {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  font-weight: normal;
+}
+
+#auth__sidebar__inner button {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 0;
+  border: 2px solid white;
+  color: white;
+  border-radius: 25px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.auth__box #box__right h2 {
+  text-align: center;
+  color: var(--primary);
+}
+
+.auth__box input[type="text"],
+.auth__box input[type="email"],
+.auth__box input[type="password"] {
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(226, 192, 192, 0.06) 0px 2px 4px -1px;
+}
+
+.auth__box #box__right #signin__btns {
+  display: flex;
+  justify-content: center;
+}
+
+.auth__box #box__right #signin__btns button {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  background: none;
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.auth__box input,
+button#signup {
+  margin: 10px 0;
+}
+
+.auth__box #auth_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button#signin {
+  width: 120px;
+  background-color: var(--primary);
+  padding: 10px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.auth__box .forget__password {
+  color: var(--primary);
+  width: 100%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.auth__box .forget__password:hover {
+  text-decoration: none;
+}
+
+/* verify email */
+
+.verify__email__page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primary-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.verify__email__page .verify__email__box {
+  background-color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  color: var(--primary);
+  margin: 50px 0;
+}
+
+.verify__email__box svg {
+  font-size: 50px;
+}
+
+.verify__email__box p {
+  color: var(--txtBlack);
+}
+
+/* forget password modal */
+
+.forget__password__modal {
+  width: 40%;
+  height: 250px;
+  background: var(--BgColor);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  transition: all 1.5s ease;
+  border-radius: 5px;
+}
+
+.forget__password__modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forget__password__modal .btn__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.forget__password__modal .close__btn__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.forget__password__modal .close__btn__group h1 {
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.forget__password__modal .btn__group button {
+  padding: 5px 10px;
+  border-radius: 25px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.forget__password__modal .btn__group .agree__btn {
+  background-color: var(--primary);
+  color: var(--txtWhite);
+}
+
+.forget__password__modal .btn__group .disabled__btn {
+  background-color: var(--txtWhite);
+}
+
+.forget__password__modal .close-btn {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.forget__password__modal .close-btn svg {
+  color: var(--primary);
+}
+
+.forget__password__modal .close-btn:hover {
+  animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  opacity: 0.8;
+}
+
+.overlay-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.forget__password__modal .modal-inner {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: calc(90% - 20px);
+  height: calc(80% - 20px);
+  padding: 10px;
+}
+
+.forget__password__modal .modal-inner {
+  font-size: 16px;
+}
+
+.modal-inner .forget__password__modal__btn {
+  background-color: var(--primary);
+  color: var(--txtWhite);
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .forget__password__modal {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .forget__password__modal {
+    width: 80%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .auth__box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .auth__box {
+    flex-direction: column;
+    height: 90vh;
+  }
+  .auth__box #box__left {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .auth__box {
+    width: 95%;
+  }
+  .auth__box .logo {
+    width: 60px;
+    height: 40px;
+  }
+}

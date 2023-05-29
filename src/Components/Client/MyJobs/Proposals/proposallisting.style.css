@@ -1,0 +1,114 @@
+.proposals__listing__sec {
+  background-color: var(--white);
+  color: var(--txtBlack);
+  margin: 50px 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.proposals__listing__sec .no__proposals__found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.proposals__listing__sec .no__proposals__found img {
+  width: 100px;
+  height: 100px;
+}
+
+.proposals__listing__sec #my__proposal {
+  padding: 25px;
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+  position: relative;
+}
+
+.proposals__listing__sec #my__proposal .proposal__heading {
+  display: flex;
+  align-items: center;
+}
+
+.proposals__listing__sec #my__proposal .proposal__heading img {
+  height: 50px;
+  width: 50px;
+}
+
+.proposals__listing__sec #my__proposal p {
+  background-color: var(--primary-light2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.proposals__listing__sec #flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.proposals__listing__sec .count {
+  padding: 10px;
+}
+
+.proposals__listing__sec .profile__link {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.proposals__listing__sec .btn__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.proposals__listing__sec .accept__btn,
+.proposals__listing__sec .reject__btn {
+  font-size: 16px;
+  color: var(--txtWhite);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.proposals__listing__sec .accept__btn {
+  background-color: green;
+  margin: 0 20px;
+}
+
+.proposals__listing__sec .reject__btn {
+  background-color: red;
+}
+
+.proposals__listing__sec #my__proposal .proposals__inner__data,
+.proposals__listing__sec #my__proposal .proposals__inner__data .heading strong {
+  display: flex;
+  align-items: center;
+}
+
+.proposals__listing__sec
+  #my__proposal
+  .proposals__inner__data
+  .heading
+  strong
+  svg {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.proposals__listing__sec #my__proposal .proposals__inner__data h2 {
+  color: var(--txtBlack);
+  background-color: var(--primary-light2);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.proposals__listing__sec #my__proposal h2 a {
+  color: blue;
+  font-weight: bold;
+}
